@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import { state } from "shared";
 import Counter from "./components/Counter.vue";
-import enviroment from "./enviroment";
 import image from "./remote_assets/logo.svg";
-console.log("remote got message:", state.message);
-console.info("vite import.meta got message:", enviroment.VITE_EXAMPLE);
 </script>
 
 <template>
@@ -29,5 +25,3 @@ console.info("vite import.meta got message:", enviroment.VITE_EXAMPLE);
     <Counter />
   </div>
 </template>
-
-<style scoped />

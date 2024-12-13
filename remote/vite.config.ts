@@ -9,9 +9,7 @@ export default defineConfig(async ({ command, mode }) => {
   const selfEnv = loadEnv(mode, process.cwd());
   return {
     server: {
-      fs: {
-        allow: [".", "../shared"],
-      },
+      fs: {},
     },
     base: "http://localhost:4174",
     plugins: [
@@ -44,7 +42,6 @@ export default defineConfig(async ({ command, mode }) => {
           "./node_modules/vue/dist/vue.runtime.esm-bundler.js"
         ),
         pinia: path.resolve(__dirname, "./node_modules/pinia/dist/pinia.mjs"),
-        shared: path.resolve(__dirname, "../shared/shared"),
       },
     },
     build: {

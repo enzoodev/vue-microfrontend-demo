@@ -5,8 +5,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "shared": ["../shared/shared.ts"]
+      "@/*": ["./src/*"]
     }
   },
   "references": [
