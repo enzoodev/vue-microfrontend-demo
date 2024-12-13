@@ -3,15 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "run-p vite:dev force-vite-restart",
+    "dev": "run-p vite:dev",
     "vite:dev": "vite --port 4174",
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 4174",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "force-vite-restart": "node ../shared/forceViteRestart.js",
-    "link:mf/vite": "pnpm link @module-federation/vite"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "esbuild-plugin-inline-image": "^0.0.9",
