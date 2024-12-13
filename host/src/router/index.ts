@@ -11,6 +11,7 @@ export const router = createRouter({
       path: "/remote",
       component: () => import("../pages/remote.vue"),
       // component: () => import("remote/remote-app"),
+      // it will be used in the future, now i'm using a local component to put a button to navigate to the home page
     },
   ],
 });
